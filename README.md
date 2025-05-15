@@ -1,2 +1,2 @@
-# task-management-system
-This is a project for management of task within any organization.
+# Task Management System
+This is a work in progress project.
