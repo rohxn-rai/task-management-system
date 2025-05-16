@@ -12,7 +12,7 @@ function NavigationMenu({ className, children, viewport = true, ...props }) {
       data-viewport={viewport}
       className={cn(
         "group/navigation-menu relative ",
-        "flex max-w-max flex-1 items-center justify-center",
+        "flex max-w-max flex-1 items-center justify-center ",
         className
       )}
       {...props}
@@ -28,7 +28,7 @@ function NavigationMenuList({ className, ...props }) {
     <NavigationMenuPrimitive.List
       data-slot="navigation-menu-list"
       className={cn(
-        "group flex flex-1 list-none items-center justify-center gap-1",
+        "group flex flex-row flex-wrap list-none items-center justify-center gap-1",
         className
       )}
       {...props}
@@ -122,7 +122,7 @@ function NavigationMenuViewport({ className, ...props }) {
   return (
     <div
       className={cn(
-        "absolute top-full left-0 isolate z-50 flex justify-center"
+        "absolute top-full left-0 isolate z-75 flex justify-center"
       )}
     >
       <NavigationMenuPrimitive.Viewport
@@ -131,7 +131,7 @@ function NavigationMenuViewport({ className, ...props }) {
           "origin-top-center bg-popover text-popover-foreground ",
           "data-[state=open]:animate-in data-[state=closed]:animate-out ",
           "data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 ",
-          "relative mt-1.5 ",
+          "relative mt-1.5 ml-5",
           "h-[var(--radix-navigation-menu-viewport-height)] w-full ",
           "overflow-hidden rounded-md border shadow ",
           "md:w-[var(--radix-navigation-menu-viewport-width)] ",
@@ -176,7 +176,7 @@ function NavigationMenuIndicator({ className, ...props }) {
         "data-[state=hidden]:animate-out ",
         "data-[state=hidden]:fade-out ",
         "data-[state=visible]:fade-in ",
-        "top-full z-[1] ",
+        "top-full z-[2] ",
         "flex h-1.5 items-end justify-center ",
         "overflow-hidden",
         className

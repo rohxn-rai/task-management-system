@@ -24,7 +24,7 @@ function SelectTrigger({ className, size = "default", children, ...props }) {
       data-slot="select-trigger"
       data-size={size}
       className={cn(
-        "border-input data-[placeholder]:text-muted-foreground ",
+        "border data-[placeholder]:text-muted-foreground ",
         "[&_svg:not([class*='text-'])]:text-muted-foreground ",
         "focus-visible:border-ring focus-visible:ring-ring/50 ",
         "aria-invalid:ring-danger/20 aria-invalid:border-danger ",
