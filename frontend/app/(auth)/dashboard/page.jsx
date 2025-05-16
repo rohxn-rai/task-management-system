@@ -1,7 +1,5 @@
 import DashboardPage from "./(dashboard)";
 
-import NavLinks from "@/components/dashboard/NavLinks";
-
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,7 +12,7 @@ const DashboardLayout = async () => {
 
   return (
     <>
-      <div className="p-6 py-8 lg:py-10 xl:py-12 border-dashed border-b">
+      <div className="px-5 py-8 lg:py-10 xl:py-12 border-dashed border-b">
         {/* breadcumb */}
         <Breadcrumb>
           <BreadcrumbList>

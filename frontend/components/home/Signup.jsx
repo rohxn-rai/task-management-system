@@ -39,44 +39,56 @@ const SignupComponent = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 w-full">
         <form className="flex flex-col text-center gap-4">
-          <h1 className="text-2xl font-bold mb-2">Signup</h1>
+          <h1 className="text-2xl font-bold mb-2">Sign up</h1>
           <div className="flex flex-col peer text-left gap-2">
-            <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1">
+            <label
+              htmlFor="name"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1"
+            >
               Name
             </label>
             <Input
               name="name"
+              id="name"
               value={signup.name}
               onChange={handleChange}
-              className="min-w-[260px] sm:w-[450px]"
+              className="w-full"
               placeholder="Enter your Name..."
             />
           </div>
           <div className="flex flex-col peer text-left gap-2">
-            <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1">
+            <label
+              htmlFor="email"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1"
+            >
               Email
             </label>
             <Input
               name="email"
+              id="email"
               value={signup.email}
               onChange={handleChange}
-              className="min-w-[260px] sm:w-[450px]"
+              className="w-full"
               placeholder="Enter your Email..."
             />
           </div>
           <div className="flex flex-col peer text-left gap-2">
-            <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1">
+            <label
+              htmlFor="password"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1"
+            >
               Password
             </label>
             <div className="relative inline">
               <Input
                 name="password"
+                id="password"
                 value={signup.password}
                 type={showPassword ? "text" : "password"}
                 onChange={handleChange}
-                className="min-w-[260px] sm:w-[450px]"
+                className="w-full"
                 placeholder="Enter your Password..."
               />
               <Button
@@ -93,16 +105,20 @@ const SignupComponent = () => {
             </div>
           </div>
           <div className="flex flex-col peer text-left gap-2">
-            <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1">
+            <label
+              htmlFor="confirmPassword"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1"
+            >
               Confirm Password
             </label>
             <div className="relative inline">
               <Input
                 name="confirmPassword"
+                id="confirmPassword"
                 value={signup.confirmPassword}
                 type={showConfirmPassword ? "text" : "password"}
                 onChange={handleChange}
-                className="min-w-[260px] sm:w-[450px]"
+                className="w-full"
                 placeholder="Confirm your Password..."
               />
               <Button

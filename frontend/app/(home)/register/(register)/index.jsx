@@ -2,8 +2,8 @@ import SignupComponent from "@/components/home/Signup";
 
 const RegisterPage = () => {
   return (
-    <div className="flex justify-center px-5 pt-8 pb-12 min-h-[calc(100vh-182px)] sm:min-h-[calc(100vh-166px)] items-center">
-      <div className="flex justify-center border p-4 rounded-lg shadow-xs">
+    <div className="conatiner m-auto flex flex-row p-3 items-center max-w-lg min-w-80 w-[calc(100vw-20px)] md:w-lg">
+      <div className="flex justify-center border p-4 rounded-md shadow-xs w-full">
         <SignupComponent />
       </div>
     </div>

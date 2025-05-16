@@ -20,9 +20,7 @@ const AuthRoute = ({ children }) => {
           "supports-[backdrop-filter]:bg-background/50 "
         )}
       >
-        <div className="px-6">
-          <NavLinks />
-        </div>
+        <NavLinks />
       </div>
 
       {/* page layout */}

@@ -31,15 +31,19 @@ const LoginComponoent = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-3 w-fit">
+      <div className="flex flex-col gap-3 w-full">
         <form className="flex flex-col gap-4">
-          <h1 className="text-2xl font-bold text-center mb-2">Login</h1>
+          <h1 className="text-2xl font-bold text-center mb-2">Log in</h1>
           <div className="flex flex-col peer gap-2">
-            <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1">
+            <label
+              htmlFor="email"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1"
+            >
               Email
             </label>
             <Input
               name="email"
+              id="email"
               value={login.email}
               type="email"
               onChange={handleChange}
@@ -48,12 +52,16 @@ const LoginComponoent = () => {
             />
           </div>
           <div className="flex flex-col peer gap-2">
-            <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1">
+            <label
+              htmlFor="password"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1"
+            >
               Password
             </label>
             <div className="relative inline">
               <Input
                 name="password"
+                id="password"
                 value={login.password}
                 type={showPassword ? "text" : "password"}
                 onChange={handleChange}
