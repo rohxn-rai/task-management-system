@@ -1,0 +1,46 @@
+{
+  "sidebar": [
+    {
+      "name": "Teams",
+      "iconName": "FaUsers",
+      "items": [
+        {
+          "item": "Team - 1",
+          "iconName": "FaUser",
+          "subitems": ["User1", "User2", "User3"]
+        },
+        {
+          "item": "Team - 2",
+          "iconName": "FaUser",
+          "subitems": ["User4", "User5", "User6"]
+        },
+        {
+          "item": "Team - 3",
+          "iconName": "FaUser",
+          "subitems": ["User1", "User3", "User5"]
+        },
+        {
+          "item": "Team - 4",
+          "iconName": "FaUser",
+          "subitems": ["User2", "User4", "User6"]
+        }
+      ]
+    },
+    {
+      "name": "Access",
+      "iconName": "FaUserGear",
+      "items": [
+        {
+          "item": "Manage User",
+          "iconName": "FaUnlock",
+          "subitems": ["Add User", "Remove User"]
+        },
+        {
+          "item": "Manage Teams",
+          "iconName": "FaUnlock",
+          "subitems": ["Add Team", "Remove Team"]
+        }
+      ]
+    }
+  ]
+}
